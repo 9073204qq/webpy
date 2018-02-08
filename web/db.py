@@ -678,7 +678,7 @@ class DB:
         else:
             out = db_cursor.rowcount
         
-        if not self.ctx.transactions: 
+        if len(self.ctx.transactions) > 0: 
             self.ctx.commit()
         return out
     
