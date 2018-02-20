@@ -1,0 +1,9 @@
+$def with (mintests)
+<ul>
+$for test in mintests:
+    <li id="t$test.id">$test.email</li>
+    <li id="t$test.id">$test.NAME</li>
+</ul>
+<form method="post" action="add">
+<p><input type="text" name="title" /> <input type="submit" value="Add" /></p>
+</form>
